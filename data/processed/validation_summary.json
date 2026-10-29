@@ -1,0 +1,51 @@
+{
+  "raw_counts": {
+    "card_positive_raw": 6059,
+    "uniprot_negative_raw": 6800,
+    "total_raw": 12859
+  },
+  "exclusions": {
+    "invalid_amino_acids_or_length_pos": 5,
+    "invalid_amino_acids_or_length_neg": 129,
+    "duplicates_and_label_conflicts": 160,
+    "total_exclusions": 294
+  },
+  "final_dataset": {
+    "total_sequences": 12108,
+    "positive_args": 6054,
+    "negative_non_args": 6054,
+    "class_ratio": "6054:6054"
+  },
+  "length_statistics": {
+    "positive_args": {
+      "count": 6054,
+      "min": 53,
+      "q1": 273.0,
+      "median": 290.0,
+      "mean": 320.092335645854,
+      "q3": 381.0,
+      "max": 1452,
+      "std": 101.00969395527939
+    },
+    "negative_non_args": {
+      "count": 6054,
+      "min": 50,
+      "q1": 253.0,
+      "median": 358.0,
+      "mean": 398.85629335976216,
+      "q3": 485.0,
+      "max": 1500,
+      "std": 222.7574886295385
+    },
+    "overall": {
+      "count": 12108,
+      "min": 50,
+      "q1": 268.0,
+      "median": 302.0,
+      "mean": 359.47431450280806,
+      "q3": 397.0,
+      "max": 1500,
+      "std": 177.37775724545813
+    }
+  }
+}

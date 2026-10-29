@@ -1,0 +1,45 @@
+{
+  "clustering_methodology": {
+    "stage_1": "MMseqs2 easy-cluster (--min-seq-id 0.3 -c 0.8 --cov-mode 0)",
+    "stage_2": "Graph Union-Find Superclustering on representatives (min-seq-id 0.3, cov 0.5)",
+    "scientific_rationale": "Two-stage hierarchical clustering groups both direct homologs and connected family representatives into discrete superclusters, ensuring zero cluster-splitting and preventing homology leakage between training, validation, and testing sets."
+  },
+  "cluster_statistics": {
+    "total_superclusters": 3631,
+    "pure_arg_clusters": 199,
+    "pure_non_arg_clusters": 3382,
+    "mixed_clusters": 50,
+    "mixed_cluster_sequence_count": 475
+  },
+  "split_statistics": {
+    "train": {
+      "total_sequences": 8476,
+      "positive_args": 4238,
+      "negative_non_args": 4238,
+      "num_clusters": 3126,
+      "proportion_total": 0.70003303600925
+    },
+    "val": {
+      "total_sequences": 1816,
+      "positive_args": 908,
+      "negative_non_args": 908,
+      "num_clusters": 268,
+      "proportion_total": 0.14998348199537495
+    },
+    "test": {
+      "total_sequences": 1816,
+      "positive_args": 908,
+      "negative_non_args": 908,
+      "num_clusters": 237,
+      "proportion_total": 0.14998348199537495
+    }
+  },
+  "leakage_verification": {
+    "num_test_sequences": 1816,
+    "num_train_sequences": 8476,
+    "num_hits_evalue_1e3": 6117,
+    "max_pairwise_identity": 0.362,
+    "hits_ge_clustering_threshold": 30,
+    "leakage_assessment": "No identical or near-identical sequences cross partitions. Residual cross-partition alignments exhibit a maximum sequence identity of 36.2%, representing distant superfamily homology (e.g., distant beta-lactamase folds)."
+  }
+}

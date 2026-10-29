@@ -1,0 +1,56 @@
+{
+  "logistic_regression": {
+    "model_name": "Logistic Regression",
+    "cv_roc_auc": 0.7998164756252804,
+    "best_params": {
+      "C": 10.0
+    },
+    "train_time_sec": 1.808964729309082,
+    "accuracy": 0.5512114537444934,
+    "precision": 0.8206896551724138,
+    "recall": 0.13105726872246695,
+    "f1_score": 0.22602089268755934,
+    "roc_auc": 0.5509361233480177,
+    "pr_auc": 0.5949725816421846,
+    "mcc": 0.18893426241131547,
+    "optimal_threshold": 0.1,
+    "val_f1_at_optimal_threshold": 0.22602089268755934
+  },
+  "random_forest": {
+    "model_name": "Random Forest",
+    "cv_roc_auc": 0.7102207819493593,
+    "best_params": {
+      "max_depth": 15,
+      "min_samples_split": 5,
+      "n_estimators": 100
+    },
+    "train_time_sec": 25.85512399673462,
+    "accuracy": 0.6459251101321586,
+    "precision": 0.7754677754677755,
+    "recall": 0.4107929515418502,
+    "f1_score": 0.537077033837293,
+    "roc_auc": 0.7398667497913798,
+    "pr_auc": 0.7537107769493276,
+    "mcc": 0.33069886388559266,
+    "optimal_threshold": 0.1,
+    "val_f1_at_optimal_threshold": 0.537077033837293
+  },
+  "svm_rbf": {
+    "model_name": "SVM (RBF Kernel)",
+    "cv_roc_auc": 0.7740602425251069,
+    "best_params": {
+      "C": 0.5,
+      "gamma": "auto"
+    },
+    "train_time_sec": 10.696867942810059,
+    "accuracy": 0.5644273127753304,
+    "precision": 0.8588957055214724,
+    "recall": 0.15418502202643172,
+    "f1_score": 0.26143790849673204,
+    "roc_auc": 0.7248976304605175,
+    "pr_auc": 0.7221671839924826,
+    "mcc": 0.2254008932304869,
+    "optimal_threshold": 0.1,
+    "val_f1_at_optimal_threshold": 0.26143790849673204
+  }
+}

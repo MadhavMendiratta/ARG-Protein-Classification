@@ -1,0 +1,70 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv/
+
+# Testing and caching
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+._*
+Thumbs.db
+
+# Academic Deliverables & Presentation Artifacts (Maintained Locally)
+reports/
+presentation/
+*.pptx
+*.pdf
+viva_questions.md
+~$*.pptx
+
+# Intermediate clustering scratch directories and archives
+data/splits/tmp_mmseqs/
+tmp_mmseqs/
+data/raw/*.tar.bz2
+data/raw/*.tar.gz
+data/raw/*.zip
+*.clstr
+*.bak
+*.tmp
+temp/
+scratch/

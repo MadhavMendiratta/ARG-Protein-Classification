@@ -1,0 +1,27 @@
+{
+  "project": "Machine Learning-Based Binary Classification of ARGs vs Non-ARGs",
+  "created_at_utc": "2026-10-21T08:02:07.788538+00:00",
+  "positive_dataset": {
+    "source": "Comprehensive Antibiotic Resistance Database (CARD)",
+    "source_url": "https://card.mcmaster.ca/latest/data",
+    "retrieval_date_utc": "2026-10-21T08:01:32.542526+00:00",
+    "database_version": "4.0.2",
+    "model_type": "Protein Homolog Model (canonical resistance genes; excludes single point mutation models)",
+    "archive_file": "data/raw/card-data.tar.bz2",
+    "archive_sha256": "94b89501fc26daafbe65e4151c17a8b007dc1272c4f8201737e44e44cdd4c065",
+    "extracted_file": "data/raw/card_homolog_raw.fasta",
+    "extracted_sha256": "86346a3e34a381a17101ba1dd8aba6e18161fc5369f61532952a292b25d3c788",
+    "raw_sequence_count": 6059
+  },
+  "negative_dataset": {
+    "source": "UniProtKB / Swiss-Prot (manually reviewed)",
+    "source_url": "https://rest.uniprot.org/uniprotkb/search",
+    "retrieval_date_utc": "2026-10-21T08:02:07.787081+00:00",
+    "database_release": "UniProtKB current release",
+    "selection_criteria": "Reviewed bacterial proteins (Swiss-Prot, taxonomy_id:2). Explicit exclusion of KW-0046 (Antibiotic resistance), KW-0089 (Beta-lactamase), GO:0046677, GO:0016999, GO:0042493, GO:0009249, and resistance terms in protein descriptions.",
+    "query_string": "reviewed:true AND taxonomy_id:2 NOT keyword:KW-0046 NOT keyword:KW-0089 NOT go:0046677 NOT go:0016999 NOT go:0042493 NOT go:0009249",
+    "downloaded_file": "data/raw/uniprot_negative_raw.fasta",
+    "sha256": "6d1caf5d885a976aa3f66b62e7898fe81fffa5ce874ac361f7ac3e9f075bc08c",
+    "raw_sequence_count": 6800
+  }
+}

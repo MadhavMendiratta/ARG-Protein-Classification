@@ -1,0 +1,68 @@
+{
+  "Logistic Regression": {
+    "y_true": "[0 0 0 ... 0 0 0]",
+    "y_pred": "[0 0 0 ... 0 0 0]",
+    "y_prob": "[2.36824289e-35 1.08199900e-29 2.26200316e-44 ... 5.34537235e-28\n 2.97950592e-23 3.64324391e-19]",
+    "metrics": {
+      "accuracy": 0.5165198237885462,
+      "precision": 0.6923076923076923,
+      "recall_sensitivity": 0.05947136563876652,
+      "specificity": 0.973568281938326,
+      "f1_score": 0.10953346855983773,
+      "roc_auc": 0.6299171340410253,
+      "pr_auc": 0.6147710519653983,
+      "mcc": 0.08147963358756347,
+      "confusion_matrix": {
+        "true_negatives": 884,
+        "false_positives": 24,
+        "false_negatives": 854,
+        "true_positives": 54
+      },
+      "threshold_used": 0.1
+    }
+  },
+  "Random Forest": {
+    "y_true": "[0 0 0 ... 0 0 0]",
+    "y_pred": "[1 1 1 ... 0 0 0]",
+    "y_prob": "[0.12456039 0.10615115 0.12504957 ... 0.09426573 0.05241632 0.08174762]",
+    "metrics": {
+      "accuracy": 0.7197136563876652,
+      "precision": 0.8036529680365296,
+      "recall_sensitivity": 0.5814977973568282,
+      "specificity": 0.8579295154185022,
+      "f1_score": 0.6747603833865815,
+      "roc_auc": 0.8190557744182887,
+      "pr_auc": 0.81610942355564,
+      "mcc": 0.4572445028312685,
+      "confusion_matrix": {
+        "true_negatives": 779,
+        "false_positives": 129,
+        "false_negatives": 380,
+        "true_positives": 528
+      },
+      "threshold_used": 0.1
+    }
+  },
+  "SVM (RBF Kernel)": {
+    "y_true": "[0 0 0 ... 0 0 0]",
+    "y_pred": "[0 0 0 ... 0 0 0]",
+    "y_prob": "[0.0146919  0.01530505 0.01015042 ... 0.00075183 0.00015118 0.00157797]",
+    "metrics": {
+      "accuracy": 0.5754405286343612,
+      "precision": 0.9536423841059603,
+      "recall_sensitivity": 0.15859030837004406,
+      "specificity": 0.9922907488986784,
+      "f1_score": 0.2719546742209632,
+      "roc_auc": 0.7872351006229502,
+      "pr_auc": 0.7995444622422669,
+      "mcc": 0.273227856208748,
+      "confusion_matrix": {
+        "true_negatives": 901,
+        "false_positives": 7,
+        "false_negatives": 764,
+        "true_positives": 144
+      },
+      "threshold_used": 0.1
+    }
+  }
+}
